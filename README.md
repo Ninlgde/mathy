@@ -1,0 +1,2 @@
+# mathy
+go test package
