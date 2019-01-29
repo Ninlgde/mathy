@@ -3,14 +3,13 @@ package mathy
 func Fib(n int) int64 {
     if n <= 1 {
         return 1
-    }
-    var s = make([]int64, n+1)
-    s[0] = 1
-    s[1] = 1
+	}
+	var a int64 = 1
+	var b int64 = 1
     for i:=2; i<=n; i++ {
-        s[i] = s[i-1] + s[i-2]
+		a, b = a+b, a
     }
-    return s[n]
+    return a
 }
 
 func Fact(n int) int64 {
